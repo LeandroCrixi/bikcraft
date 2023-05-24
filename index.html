@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikcraft - Electric Bicycles</title>
     <meta name="description" content="Electric bicycles with high precision and quality, tailored to the customer. Explore the world at your own speed with Bikcraft.">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="./favicon.svg" type="image/image/svg+xml">
+    <link rel="stylesheet" href="style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <script>
+        document.documentElement.classList.add('js')
+    </script>
 </head>
 <body>
     <header class="header-bg">
@@ -30,11 +36,11 @@
     <main class="introducao-bg">
         <div class="container introducao">
             <div class="introducao-conteudo">
-                <h1 class="font-1-xxl cor-0">Custom made bicycles<span class="cor-p1">.</span></h1>
-                <p class="font-2-l cor-5">Electric bicycles with high precision and quality, tailored to the customer. Explore the world at your own speed with Bikcraft.</p>
-                <a class="botao" href="./bicicletas.html">Choose yours</a>
+                <h1 class="font-1-xxl cor-0 fadeInDown" data-anime='200'>Custom made bicycles<span class="cor-p1">.</span></h1>
+                <p class="font-2-l cor-5 fadeInDown" data-anime='400'>Electric bicycles with high precision and quality, tailored to the customer. Explore the world at your own speed with Bikcraft.</p>
+                <a class="botao fadeInDown" data-anime='600' href="./bicicletas.html">Choose yours</a>
             </div>
-            <div class="introducao-imagem">
+            <div class="introducao-imagem fadeInDown" data-anime="800">
                 <img src="./img/fotos/introducao.jpg" alt="Electric black bicycle">
             </div>
         </div>
@@ -185,7 +191,7 @@
             <p class="footer-copy font-2-m cor-6">2023 © Bikcraft. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
